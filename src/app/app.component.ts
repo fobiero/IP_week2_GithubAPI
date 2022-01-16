@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'IP-gitHub-API';
+
+  search: any = "";
+
+  getUser(forms:NgForm) {
+    if(this.search === '') {
+      alert('Fields empy')
+    } else {
+      alert(this.search)
+      forms.reset();
+    }
+  }
 }
