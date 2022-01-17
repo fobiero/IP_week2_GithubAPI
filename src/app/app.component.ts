@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+// import { from } from 'rxjs';
+import {UsersService} from './users.service';
+
 
 @Component({
   selector: 'app-root',
@@ -9,14 +11,10 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
   title = 'IP-gitHub-API';
 
-  search: any = "";
-
-  getUser(forms:NgForm) {
-    if(this.search === '') {
-      alert('Fields empy')
-    } else {
-      alert(this.search)
-      forms.reset();
-    }
+  constructor(private user:UsersService) {
+    this.user.getUser().subscribe((data) => {
+      console.log(data);
+    })
   }
+
 }
