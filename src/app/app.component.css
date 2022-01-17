@@ -1,3 +1,8 @@
-.userData {
-    padding: 4rem 0;
+.container {
+    padding: 3rem 0;
+}
+
+.getData {
+    padding: 2rem 4rem;
+    border: 1px solid #eee;
 }
