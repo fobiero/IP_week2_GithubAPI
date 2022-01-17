@@ -1,8 +1,37 @@
 .container {
-    padding: 3rem 0;
+    padding: 15rem 0;
 }
 
-.getData {
-    padding: 2rem 4rem;
+.interface {
+    text-align: center;
+    align-items: center;
+}
+
+.interface h1 {
+    padding: 2rem 0;
+}
+
+.user {
+    align-items: center;
+}
+
+input {
+    width: 600px;
+    padding: 1rem;
+    border-radius: 5rem;
+    outline: none;
     border: 1px solid #eee;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    text-align: center;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+button i {
+    font-size: 1.5rem;
+    margin-left: 1.2rem;
 }
