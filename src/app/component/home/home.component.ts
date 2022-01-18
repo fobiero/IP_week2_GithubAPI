@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from 'src/app/users.service';
-import {UserComponent} from '../user/user.component'
+// import {UserComponent} from '../user/user.component'
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,7 @@ export class HomeComponent {
 
   title = 'IP-gitHub-API';
   userData:any = []
-  myRepo: any;
+  myRepo: any = []
   myInfo: any;
 
   constructor(private UsersService:UsersService) {}
@@ -21,7 +21,6 @@ export class HomeComponent {
 
   showUsers() {
     this.UsersService.getUser().subscribe((data) => {
-      // console.log(data);
       this.users=data;
     })
   }
@@ -32,15 +31,15 @@ export class HomeComponent {
     this.showUsers()
   }
 
-// my info 
+// my info get name
   show_myName() {
-    this.UsersService.getUser().subscribe((data) => {
+    this.UsersService.getMyUsername().subscribe((data) => {
       this.myInfo=data;
     })
   }
 
   show_myRepo() {
-    this.UsersService.getUser().subscribe((data) => {
+    this.UsersService.getMyGit_repo().subscribe((data) => {
       this.myRepo=data;
     })
   }
