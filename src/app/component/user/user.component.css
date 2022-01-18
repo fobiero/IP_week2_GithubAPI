@@ -18,14 +18,26 @@
 }
 
 .show-user {
-    margin-top: 3rem;
-    /* margin-bottom: 1rem; */
+    /* padding: 2rem 0; */
+    align-items: center;
+    display: flex;
+    margin-top: 2rem;
     text-align: left !important;
-    /* float: left !important; */
+}
+
+.profile_user {
+    width: 100px;
+    margin-right: 3rem;
+    height: 100px;
+}
+
+.profile_user img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 .p-cont p {
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid #eee;
 }
 

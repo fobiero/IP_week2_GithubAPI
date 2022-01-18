@@ -5,11 +5,14 @@
         <button type="submit" (click)="getVal(search.value)"><i class="fas fa-search"></i></button>
     </div>
     <div class="show-user">
+        <div class="profile_user">
+            <img src="{{searchData.avatar_url}}" alt="">
+        </div>
         <div class="p-cont" *ngIf="searchData">
             <!-- <p class="p1">FullNames: Obiero felix </p> -->
             <p class="p2">Github Username : {{searchData.login}}</p>
             <p class="p3">Folowing : {{searchData.following}}</p>
-            <!-- <p class="p3">Number of Repos: {{searchData.public_repos"}}</p> -->
+            <p class="p">Followers : {{searchData.followers}}</p>
         </div>
     </div>
 </div>
