@@ -1,0 +1,20 @@
+.profile {
+    padding: 5rem 0;
+    display: flex;
+}
+
+.p-pic {
+    max-width: 50%;
+    margin-right: 3rem;
+    width: 200px;
+    border: 1px solid #eee;
+    padding: 5rem;
+}
+
+.p1,
+.p2,
+.p3 {
+    font-weight: 300;
+    letter-spacing: .1rem;
+    margin: 1rem 0;
+}
