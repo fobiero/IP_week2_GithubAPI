@@ -9,7 +9,11 @@
     margin-right: 3rem;
     width: 200px;
     border: 1px solid #eee;
-    padding: 5rem;
+    padding: 2rem;
+}
+
+.p-pic img {
+    width: 100%;
 }
 
 .p1,
