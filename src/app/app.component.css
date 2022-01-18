@@ -28,3 +28,8 @@ ul li a {
     list-style: none;
     text-decoration: none;
 }
+
+span {
+    font-weight: 300;
+    color: #318AF0;
+}
