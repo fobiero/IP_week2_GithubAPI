@@ -1,15 +1,13 @@
-import { Component } from '@angular/core';
-// import { from } from 'rxjs';
-import {UsersService} from './users.service';
-
+import { Component, OnInit } from '@angular/core';
+import {UsersService} from '../../users.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.css']
 })
 
-export class AppComponent {
+export class UserComponent {
 
   title = 'IP-gitHub-API';
   userData:any = []
@@ -18,7 +16,7 @@ export class AppComponent {
 
   constructor(private UsersService:UsersService) {}
 
-// get user inout value 
+// get user input value 
   users:any;
 
   showUsers() {
@@ -47,3 +45,4 @@ export class AppComponent {
     })
   }
 }
+

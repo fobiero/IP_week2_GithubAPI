@@ -1,0 +1,22 @@
+<div class="interface">
+    <h1><span>github</span> search engine</h1>
+    <div class="user">
+        <input type="text" #search placeholder="Enter Github Username">
+        <button type="submit" (click)="getVal(search.value)"><i class="fas fa-search"></i></button>
+    </div>
+</div>
+
+<div class="getData">
+    <table class="table">
+        <tr>
+            <td>Username</td>
+            <td>UserId</td>
+            <td>Repo_Url</td>
+        </tr>
+        <tr>
+            <td>{{users.login}}</td>
+            <td>{{users.node_id}}</td>
+            <td>{{users.public_repos}}</td>
+        </tr>
+    </table>
+</div>
