@@ -14,6 +14,19 @@
 
 .user {
     align-items: center;
+    text-align: center;
+}
+
+.show-user {
+    margin-top: 3rem;
+    /* margin-bottom: 1rem; */
+    text-align: left !important;
+    /* float: left !important; */
+}
+
+.p-cont p {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
 }
 
 input {

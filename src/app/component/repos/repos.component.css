@@ -46,3 +46,10 @@ button i {
     font-size: 1.5rem;
     margin-left: 1.2rem;
 }
+
+.repo {
+    overflow-x: auto;
+    text-align: left;
+    padding: .7rem 0;
+    border-bottom: 1px solid #eee;
+}
