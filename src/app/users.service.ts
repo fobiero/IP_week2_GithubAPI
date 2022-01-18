@@ -11,6 +11,7 @@ username = "";
 
   getUsername(username:string) {
     this.username = username;
+    alert(this.username)
   }
 
   getUser() {
