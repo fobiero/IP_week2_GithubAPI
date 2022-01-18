@@ -13,6 +13,7 @@ export class UserComponent {
   userData:any = []
   myRepo: any;
   myInfo: any;
+  searchData:any;
 
   constructor(private UsersService:UsersService) {}
 
@@ -22,7 +23,9 @@ export class UserComponent {
   showUsers() {
     this.UsersService.getUser().subscribe((data) => {
       // console.log(data);
-      this.users=data;
+      this.searchData=data;
+      console.log(this.searchData);
+      
     })
   }
 

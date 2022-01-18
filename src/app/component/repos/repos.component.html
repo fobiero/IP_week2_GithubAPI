@@ -4,4 +4,9 @@
         <input type="text" #search placeholder="Enter Repo name">
         <button type="submit" (click)="getVal(search.value)"><i class="fas fa-search"></i></button>
     </div>
+    <div class="all-repos" *ngFor="let repo of getRepo">
+        <div class="repo">
+            {{repo.name}}
+        </div>
+    </div>
 </div>

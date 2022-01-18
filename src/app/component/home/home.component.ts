@@ -7,14 +7,19 @@ import { UsersService } from 'src/app/users.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+
+export class HomeComponent implements OnInit {
 
   title = 'IP-gitHub-API';
   userData:any = []
-  myRepo: any = []
+  myRepo: any;
   myInfo: any;
 
   constructor(private UsersService:UsersService) {}
+
+  ngOnInit(): void {
+      this.show_myName()
+  }
 
 // get user inout value 
   users:any;

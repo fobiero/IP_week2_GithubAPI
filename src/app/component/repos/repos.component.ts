@@ -13,11 +13,21 @@ export class ReposComponent {
   userData:any = []
   myRepo: any;
   myInfo: any;
+  getRepo:any;
 
   constructor(private UsersService:UsersService) {}
 
 // get user input value 
   users:any;
+
+  get_all_repos() {
+    this.UsersService.getUser_repo().subscribe((data) => {
+      this.getRepo = data;
+      console.log(this.getRepo);
+      
+    })
+  }
+
 
   showUsers() {
     this.UsersService.getUser().subscribe((data) => {
@@ -29,7 +39,8 @@ export class ReposComponent {
   getVal(value: string) {
     this.users = value;
     this.UsersService.getUsername(this.users);
-    this.showUsers()
+    // this.showUsers()
+    this.get_all_repos()
   }
 
 // my info 
@@ -44,5 +55,6 @@ export class ReposComponent {
       this.myRepo=data;
     })
   }
+
 }
 

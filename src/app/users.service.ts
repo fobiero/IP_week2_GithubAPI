@@ -5,13 +5,18 @@ import {HttpClient} from '@angular/common/http'
   providedIn: 'root'
 })
 export class UsersService {
+
 username = "";
+userRepo = "repos";
+
 // value from url 
   constructor(private http:HttpClient) { }
 
   getUsername(username:string) {
     this.username = username;
   }
+
+
 
   getUser() {
     const url = 'https://api.github.com/users/';
@@ -26,6 +31,11 @@ username = "";
   getMyGit_repo() {
     const url = 'https://api.github.com/users/fobiero/repos';
     return this.http.get(url);
+  }
+
+  getUser_repo() {
+    const url = 'https://api.github.com/users/';
+    return this.http.get(url + this.username + "/" + this.userRepo);
   }
  
 }
