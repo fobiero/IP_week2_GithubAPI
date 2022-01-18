@@ -1,52 +1,30 @@
-.container {
-    padding: 15rem 0;
+.main-nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
 }
 
-.interface {
+.navbar {
+    padding: 1.2rem;
     text-align: center;
     align-items: center;
 }
 
-.interface h1 {
-    padding: 2rem 0;
-    font-weight: 400;
-    font-size: 2.5rem;
-    letter-spacing: .1rem;
-    text-transform: capitalize;
+ul {
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
 }
 
-.user {
-    align-items: center;
+ul li {
+    padding: 0 2rem;
+    list-style: none;
 }
 
-input {
-    width: 600px;
-    max-width: 80%;
-    padding: 1rem;
-    border-radius: 5rem;
-    color: inherit;
-    font-size: 1.2rem;
-    outline: none;
-    letter-spacing: .15rem;
-    border: 1px solid #eee;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-input::placeholder {
-    font-size: 1.2rem;
-    letter-spacing: .15rem;
-}
-
-button {
-    text-align: center;
-    align-items: center;
-    background: none;
-    border: none;
-    /* padding: 0; */
-    outline: none;
-}
-
-button i {
-    font-size: 1.5rem;
-    margin-left: 1.2rem;
+ul li a {
+    color: #000;
+    list-style: none;
+    text-decoration: none;
 }

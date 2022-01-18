@@ -1,1 +1,7 @@
-<p>user works!</p>
+<div class="interface">
+    <h1>Search User</h1>
+    <div class="user">
+        <input type="text" #search placeholder="Enter Github Username">
+        <button type="submit" (click)="getVal(search.value)"><i class="fas fa-search"></i></button>
+    </div>
+</div>
